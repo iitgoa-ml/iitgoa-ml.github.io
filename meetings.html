@@ -1,190 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
 
-    <title>Meetings</title>
-    <link rel="shortcut icon" href="images/logo/ml-circle-small.png" />
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
 
-    <!-- Bootstrap core CSS -->
-    <link href="./css/bootstrap.min.css" rel="stylesheet" />
-  </head>
+  <title>Meetings</title>
+  <link rel="shortcut icon" href="images/logo/ml-circle-small.png" />
 
-  <body>
-    <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg bg-light navbar-light fixed-top">
-      <!-- Brand/logo -->
-      <a class="navbar-brand" href="./index.html#">
+  <!-- Bootstrap core CSS -->
+  <link href="./css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- JS Code -->
+  <script src="./js/meetings.js"></script>
+</head>
+
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg bg-light navbar-light fixed-top">
+    <!-- Brand/logo -->
+    <a class="navbar-brand" href="./index.html#">
         <img
           src="./images/logo/ml-circle-small.png"
           alt="ml-circle"
           style="height:48px;"
         />
       </a>
-      <!-- Navigation Bar Collapse Button -->
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#collapsibleNavbar"
-      >
+    <!-- Navigation Bar Collapse Button -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <!-- Navigation Bar Items -->
-      <div class="collapse navbar-collapse" id="collapsibleNavbar">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="./index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./research/index.html">Research</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="people.html">People</a>
-          </li>
-          <li class="nav-item"><a class="nav-link" href="#">Meetings</a></li>
-          <li class="nav-item">
-            <a class="nav-link" href="news.html">News</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./resources.html">Resources</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./courses.html">Courses</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+    <!-- Navigation Bar Items -->
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="./index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./research/index.html">Research</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="people.html">People</a>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="#">Meetings</a></li>
+        <li class="nav-item">
+          <a class="nav-link" href="news.html">News</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./resources.html">Resources</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./courses.html">Courses</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
 
-    <!-- Meetings Section -->
-    <div class="container" style="margin-top:100px">
-      <h2 class="text-center">Meetings</h2>
-      <div>
-        <table class="table table-hover table-striped table-condensed">
-          <thead>
-            <tr>
-              <th scope="col">Date</th>
-              <th scope="col">Venue</th>
-              <th scope="col">Topic</th>
-              <th scope="col">Abstract</th>
-            </tr>
-          </thead>
+  <!-- Meetings Section -->
+  <div class="container" style="margin-top:100px">
+    <h2 class="text-center">Meetings</h2>
+    <div>
+      <table class="table table-hover table-striped table-condensed">
+        <thead>
+          <tr>
+            <th scope="col">Date and Time</th>
+            <th scope="col">Venue</th>
+            <th scope="col">Topic</th>
+            <th scope="col">Abstract/Slides</th>
+          </tr>
+        </thead>
+        <tbody id="meeting_table_body">
+          <!--Rows will be added by JS Code-->
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- JS Code to set fill meeting table -->
+  <script>
+    var meeting_table_body = document.getElementById("meeting_table_body");
+    for (var i = meeting_list.length - 1; i >= 0; i--) {
+      var meeting_info = meeting_list[i];
+      var each_meeting = document.createElement('tr');
+
+      // Date and time
+      var td_1 = each_meeting.insertCell();
+      td_1.appendChild(document.createTextNode(meeting_info.date_and_time));
+
+      // Venue
+      var td_2 = each_meeting.insertCell();
+      td_2.appendChild(document.createTextNode(meeting_info.venue));
+
+      // Topic
+      var td_3 = each_meeting.insertCell();
+      td_3.appendChild(document.createTextNode(meeting_info.topic));
+
+      // Abstract/Slices
+      var td_4 = each_meeting.insertCell();
+      if (meeting_info.abstract_link != "") {
+        var abstract = document.createElement('a');
+        abstract.appendChild(document.createTextNode("abstract"));
+        abstract.setAttribute("href", meeting_info.abstract_link);
+        abstract.setAttribute("target", "_blank");
+        abstract.classList.add("badge");
+        abstract.classList.add("badge-primary");
+        abstract.style.marginRight = "5px";
+        td_4.appendChild(abstract);
+      }
+
+      if (meeting_info.slides_link != "") {
+        var slides = document.createElement('a');
+        slides.appendChild(document.createTextNode("slides"));
+        slides.setAttribute("href", meeting_info.slides_link);
+        slides.setAttribute("target", "_blank");
+        slides.classList.add("badge");
+        slides.classList.add("badge-info");
+        td_4.appendChild(slides);
+      }
+
+      meeting_table_body.appendChild(each_meeting);
+    }
+  </script>
+
+
+  <!-- Footer Section -->
+  <div class="page-footer" style="margin-top: 3em; margin-bottom: 3em;">
+    <div class="container-fluid">
+      <a id="iitgoa" href="http://www.iitgoa.ac.in/">
+        <table class=".p-3" style="margin: 0 auto">
           <tbody>
             <tr>
-              <td>February 7, 2019</td>
-              <td>LH-1</td>
               <td>
-                Convergence analysis of gradient descent (by Shivam Pandey)
+                <!-- Brand/logo -->
+                <img class="img-responsive" src="images/logo/iitgoa.png" alt="iitgoa" style="height:50px;" />
               </td>
+              <td>&nbsp;&nbsp;</td>
               <td>
-                <a
-                  href="meetings/abstracts/ML Circle _ Meeting - 2.pdf"
-                  target="_blank"
-                  class="badge badge-primary"
-                  >abstract</a
-                >
-              </td>
-            </tr>
-            <tr>
-              <td>3 PM, February 2, 2019</td>
-              <td>LH-2</td>
-              <td>
-                Linear regression using Gradient Descent: Spare Session (by
-                Abhishek Varghese)
-              </td>
-              <td>
-                <a
-                  href="meetings/abstracts/ML Circle _ Meeting - 1.pdf"
-                  target="_blank"
-                  class="badge badge-primary"
-                  >abstract</a
-                >
-              </td>
-            </tr>
-            <tr>
-              <td>3:10 - 4:10 PM, January 31, 2019</td>
-              <td>LH-2</td>
-              <td>
-                Linear regression using Gradient Descent (by Abhishek Varghese)
-              </td>
-              <td>
-                <a
-                  href="meetings/abstracts/ML Circle _ Meeting - 1.pdf"
-                  target="_blank"
-                  class="badge badge-primary"
-                  >abstract</a
-                >
-              </td>
-            </tr>
-            <tr>
-              <td>3-4 PM, January 17, 2019</td>
-              <td>LH-1</td>
-              <td>ML Circle Inception</td>
-              <td>
-                <a
-                  href="meetings/abstracts/ML Circle Inception Abstract.pdf"
-                  target="_blank"
-                  class="badge badge-primary"
-                  >abstract</a
-                >
+                Indian Institute of Technology Goa <br /> Farmagudi, Ponda, Goa 403401
               </td>
             </tr>
           </tbody>
         </table>
-      </div>
+      </a>
     </div>
+  </div>
 
-    <!-- Footer Section -->
-    <div class="page-footer" style="margin-top: 3em; margin-bottom: 3em;">
-      <div class="container-fluid">
-        <a id="iitgoa" href="http://www.iitgoa.ac.in/">
-          <table class=".p-3" style="margin: 0 auto">
-            <tbody>
-              <tr>
-                <td>
-                  <!-- Brand/logo -->
-                  <img
-                    class="img-responsive"
-                    src="images/logo/iitgoa.png"
-                    alt="iitgoa"
-                    style="height:50px;"
-                  />
-                </td>
-                <td>&nbsp;&nbsp;</td>
-                <td>
-                  Indian Institute of Technology Goa <br />
-                  Farmagudi, Ponda, Goa 403401
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </a>
-      </div>
-    </div>
-
-    <!-- Bootstrap core JavaScript
+  <!-- Bootstrap core JavaScript
     ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script
-      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+
 </html>
