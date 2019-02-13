@@ -31,7 +31,7 @@ meeting_list.push(new Meeting(
     slides_link = 'https://prezi.com/view/fDCGpAX3gdSSuiulon8C/'));
 
 meeting_list.push(new Meeting(
-    date_and_time = 'February 14, 2019',
-    venue = 'LH-1',
+    date_and_time = '5 PM onwards, February 14, 2019',
+    venue = 'LH-2',
     topic = 'Convergence analysis of gradient descent (by Shivam Pandey)',
     abstract_link = 'meetings/abstracts/ML Circle _ Meeting - 2.pdf'));
