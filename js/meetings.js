@@ -35,3 +35,9 @@ meeting_list.push(new Meeting(
     venue = 'LH-2',
     topic = 'Convergence analysis of gradient descent (by Shivam Pandey)',
     abstract_link = 'meetings/abstracts/ML Circle _ Meeting - 2.pdf'));
+
+meeting_list.push(new Meeting(
+    date_and_time = '5:30 - 6:30 PM, April 2, 2019',
+    venue = 'CL-3',
+    topic = 'Introduction to Convex Optimization (by Abhilasha Gupta and Mahesh Barve)',
+    abstract_link = 'meetings/abstracts/ML Circle _ Meeting - 3.pdf'));
