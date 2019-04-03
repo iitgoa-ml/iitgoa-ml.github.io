@@ -40,4 +40,5 @@ meeting_list.push(new Meeting(
     date_and_time = '5:30 - 6:30 PM, April 2, 2019',
     venue = 'CL-3',
     topic = 'Introduction to Convex Optimization (by Abhilasha Gupta and Mahesh Barve)',
-    abstract_link = 'meetings/abstracts/ML Circle _ Meeting - 3.pdf'));
+    abstract_link = 'meetings/abstracts/ML Circle _ Meeting - 3.pdf',
+    slides_link = 'meetings/slides/Convex_Optimization__ML_circle.pdf'));
