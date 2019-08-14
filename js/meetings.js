@@ -46,13 +46,13 @@ meeting_list.push(new Meeting(
 meeting_list.push(new Meeting(
     date_and_time = 'Aug 14, 2019, 3-4 pm',
     venue = 'CL-2',
-    topic = 'Topic Modeling: General Introduction to Learning by Sreejith A. V.',
+    topic = 'Topic Modeling: 1. General Introduction to Learning by Sreejith A. V.',
     abstract_link = '',
     slides_link = ''));
 
 meeting_list.push(new Meeting(
     date_and_time = 'Aug 21, 2019, 3-4 pm',
     venue = 'CL-2',
-    topic = 'Topic Modeling: Understanding Singular Value Decomposition (SVD) by Lok Pati Tripathi',
+    topic = 'Topic Modeling: 2. Understanding Singular Value Decomposition (SVD) by Lok Pati Tripathi',
     abstract_link = '',
     slides_link = ''));
