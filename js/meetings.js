@@ -43,9 +43,16 @@ meeting_list.push(new Meeting(
     abstract_link = 'meetings/abstracts/ML Circle _ Meeting - 3.pdf',
     slides_link = 'meetings/slides/Convex_Optimization__ML_circle.pdf'));
 
-    meeting_list.push(new Meeting(
-        date_and_time = 'Aug 14, 2019, 3-4 pm',
-        venue = 'CL-2',
-        topic = 'Topic Modeling: General Introduction to Learning by Sreejith A. V.',
-        abstract_link = '',
-        slides_link = ''));
+meeting_list.push(new Meeting(
+    date_and_time = 'Aug 14, 2019, 3-4 pm',
+    venue = 'CL-2',
+    topic = 'Topic Modeling: General Introduction to Learning by Sreejith A. V.',
+    abstract_link = '',
+    slides_link = ''));
+
+meeting_list.push(new Meeting(
+    date_and_time = 'Aug 21, 2019, 3-4 pm',
+    venue = 'CL-2',
+    topic = 'Topic Modeling: Understanding Singular Value Decomposition (SVD) by Lok Pati Tripathi',
+    abstract_link = '',
+    slides_link = ''));
