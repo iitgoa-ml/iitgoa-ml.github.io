@@ -51,7 +51,7 @@ meeting_list.push(new Meeting(
     slides_link = ''));
 
 meeting_list.push(new Meeting(
-    date_and_time = 'Aug 21, 2019, 3-4 pm',
+    date_and_time = 'Aug 22, 2019, 5-6 pm',
     venue = 'CL-2',
     topic = 'Topic Modeling: 2. Understanding Singular Value Decomposition (SVD) by Lok Pati Tripathi',
     abstract_link = '',
