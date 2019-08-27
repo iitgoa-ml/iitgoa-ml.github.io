@@ -56,3 +56,18 @@ meeting_list.push(new Meeting(
     topic = 'Topic Modeling: 2. Understanding Singular Value Decomposition (SVD) by Lok Pati Tripathi',
     abstract_link = '',
     slides_link = ''));
+
+meeting_list.push(new Meeting(
+    date_and_time = 'Aug 29, 2019, 5-6 pm',
+    venue = 'CL-2',
+    topic = 'Topic Modeling: 3. Applications of Singular Value Decomposition (SVD), Matrix Norms, k-rank Approximations by Lok Pati Tripathi',
+    abstract_link = '',
+    slides_link = ''));
+
+
+meeting_list.push(new Meeting(
+    date_and_time = 'Sep 05, 2019, 5-6 pm',
+    venue = 'CL-2',
+    topic = 'Topic Modeling: 4. Overview of various algebraic and probabilisitic approaches for topic modeling by Clint P. George',
+    abstract_link = '',
+    slides_link = ''));
