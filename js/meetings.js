@@ -68,6 +68,13 @@ meeting_list.push(new Meeting(
 meeting_list.push(new Meeting(
     date_and_time = 'Sep 05, 2019, 5-6 pm',
     venue = 'CL-2',
-    topic = 'Topic Modeling: 4. Overview of various algebraic and probabilisitic approaches for topic modeling by Clint P. George',
+    topic = 'Topic Modeling: 4. Overview of various algebraic approaches for topic modeling by Clint P. George',
+    abstract_link = '',
+    slides_link = ''));
+
+meeting_list.push(new Meeting(
+    date_and_time = 'Sep 19, 2019, 5-6 pm',
+    venue = 'CL-2 or Lab 2',
+    topic = 'Topic Modeling: 5. Probabilistic topic models by Clint P. George',
     abstract_link = '',
     slides_link = ''));
