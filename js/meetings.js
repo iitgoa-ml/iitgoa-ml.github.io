@@ -74,7 +74,14 @@ meeting_list.push(new Meeting(
 
 meeting_list.push(new Meeting(
     date_and_time = 'Sep 19, 2019, 5-6 pm',
-    venue = 'CL-2 or Lab 2',
+    venue = 'Lab 2',
     topic = 'Topic Modeling: 5. Probabilistic topic models by Clint P. George',
+    abstract_link = '',
+    slides_link = ''));
+
+meeting_list.push(new Meeting(
+    date_and_time = 'Oct 01, 2019, 5-6 pm',
+    venue = 'CL-2',
+    topic = 'Topic Modeling: 6. Matrix and vector norms and applications in SVD by Lok Pati Tripathi',
     abstract_link = '',
     slides_link = ''));
