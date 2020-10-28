@@ -46,7 +46,7 @@ meeting_list.push(new Meeting(
 meeting_list.push(new Meeting(
     date_and_time = 'Aug 14, 2019, 3-4 pm',
     venue = 'CL-2',
-    topic = 'Topic Modeling: 1. General Introduction to Learning by Sreejith A. V.',
+    topic = 'Topic Modeling: 1. General Introduction to Learning (by Sreejith A. V).',
     abstract_link = '',
     slides_link = ''));
 
@@ -60,7 +60,7 @@ meeting_list.push(new Meeting(
 meeting_list.push(new Meeting(
     date_and_time = 'Aug 29, 2019, 5-6 pm',
     venue = 'CL-2',
-    topic = 'Topic Modeling: 3. Applications of Singular Value Decomposition (SVD), Matrix Norms, k-rank Approximations by Lok Pati Tripathi',
+    topic = 'Topic Modeling: 3. Applications of Singular Value Decomposition (SVD), Matrix Norms, k-rank Approximations (by Lok Pati Tripathi)',
     abstract_link = '',
     slides_link = ''));
 
@@ -68,20 +68,27 @@ meeting_list.push(new Meeting(
 meeting_list.push(new Meeting(
     date_and_time = 'Sep 05, 2019, 5-6 pm',
     venue = 'CL-2',
-    topic = 'Topic Modeling: 4. Overview of various algebraic approaches for topic modeling by Clint P. George',
+    topic = 'Topic Modeling: 4. Overview of various algebraic approaches for topic modeling (by Clint P. George)',
     abstract_link = '',
     slides_link = ''));
 
 meeting_list.push(new Meeting(
     date_and_time = 'Sep 19, 2019, 5-6 pm',
     venue = 'Lab 2',
-    topic = 'Topic Modeling: 5. Probabilistic topic models by Clint P. George',
+    topic = 'Topic Modeling: 5. Probabilistic topic models (by Clint P. George)',
     abstract_link = '',
     slides_link = ''));
 
 meeting_list.push(new Meeting(
     date_and_time = 'Oct 01, 2019, 5-6 pm',
     venue = 'CL-2',
-    topic = 'Topic Modeling: 6. Matrix and vector norms and applications in SVD by Lok Pati Tripathi',
+    topic = 'Topic Modeling: 6. Matrix and vector norms and applications in SVD (by Lok Pati Tripathi)',
     abstract_link = '',
     slides_link = ''));
+
+meeting_list.push(new Meeting(
+    date_and_time = 'Jul 11, 2020, 11 am',
+    venue = 'Online',
+    topic = 'MDP and Introduction to Reinforcement Learning (by Abhishek Varghese)',
+    abstract_link = '',
+    slides_link = 'https://prezi.com/view/y86QjOIJ7y9YQeelZDyC/'));
