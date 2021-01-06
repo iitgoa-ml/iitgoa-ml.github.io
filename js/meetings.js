@@ -92,3 +92,18 @@ meeting_list.push(new Meeting(
     topic = 'MDP and Introduction to Reinforcement Learning (by Abhishek Varghese)',
     abstract_link = '',
     slides_link = 'https://prezi.com/view/y86QjOIJ7y9YQeelZDyC/'));
+
+meeting_list.push(new Meeting(
+    date_and_time = 'Jan 11, 2021, 11:15 am',
+    venue = 'Online',
+    topic = 'ML Circle Inception (by Dr. Clint P. George)',
+    abstract_link = '',
+    slides_link = ''));
+
+meeting_list.push(new Meeting(
+    date_and_time = 'Jan 11, 2021, 11:30 am',
+    venue = 'Online',
+    topic = 'Probability Theory Discussion Session Series- 1 (by Abhishek Varghese)',
+    abstract_link = '',
+    slides_link = ''));
+
