@@ -98,12 +98,12 @@ meeting_list.push(new Meeting(
     venue = 'Online',
     topic = 'ML Circle Inception (by Dr. Clint P. George)',
     abstract_link = '',
-    slides_link = ''));
+    slides_link = 'meetings/slides/Probability Theory - Part 1.pdf'));
 
 meeting_list.push(new Meeting(
     date_and_time = 'Jan 11, 2021, 11:30 am',
     venue = 'Online',
     topic = 'Probability Theory Discussion Series - 1 (by Abhishek Varghese)',
     abstract_link = '',
-    slides_link = ''));
+    slides_link = 'meetings/slides/Probability Theory - Part 1.pdf'));
 
