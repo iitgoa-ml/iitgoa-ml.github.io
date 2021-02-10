@@ -4,3 +4,8 @@ description: IIT Goa Machine Learning Circle
 
 github:
   private: true
+
+sass:
+  # Where you keep your scss files
+  sass_dir: assets/css/
+
