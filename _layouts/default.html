@@ -14,16 +14,27 @@
       
       {% if site.title and site.title != page.title %}
       
-      <!-- Brand/logo -->
-      <a href="{{ "/" | absolute_url }}">
-        <img
-          src="{{ "/" | absolute_url }}/images/logo/ml-circle-small.png"
-          alt="ml-circle"
-          style="height:48px;"
-        />
-      </a>
-      <a href="{{ "/" | absolute_url }}">Home</a>
-      <a href="{{ "/" | absolute_url }}/meetings/">Meetings</a>
+      
+      
+      
+      <table style="width:100%">
+        <tr>
+          <th style="width:40%">
+            <!-- Brand/logo -->
+            <a href="{{ "/" | absolute_url }}">
+              <img
+                src="{{ "/" | absolute_url }}images/logo/ml-circle-small.png"
+                alt="ml-circle"
+                style="height:48px;"
+              />
+            </a>
+          </th>
+          <th style="width:60%">
+            <a href="{{ "/" | absolute_url }}">Home</a>
+            <a href="{{ "/" | absolute_url }}meetings/">Meetings</a>
+          </th>
+        </tr>
+      </table>
       
       <!--h1><a href="{{ "/" | absolute_url }}">TEST {{ site.title }}</a></h1-->
       {% endif %}
