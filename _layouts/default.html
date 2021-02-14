@@ -10,11 +10,7 @@
   </head>
   <body>
     
-     {% if site.title and site.title != page.title %}
-      
-      
-      
-      
+    <div class="container-lg px-3 my-5">
       <table style="width:100%;border:0;border:none">
         <tr>
           <th style="width:40%;text-align:left;vertical-align:middle;padding:0">
@@ -28,18 +24,21 @@
             </a>
           </th>
           <th style="width:60%;text-align:center;vertical-align:middle;padding:5">
-            <a href="{{ "/" | absolute_url }}" class="btn" role="button">Home</a>&nbsp;<a href="{{ "/" | absolute_url }}meetings/" class="btn" role="button">Meetings</a>
+            <a href="{{ "/" | absolute_url }}" class="btn" role="button">Home</a>
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            <a href="{{ "/" | absolute_url }}meetings/" class="btn" role="button">Meetings</a>
           </th>
         </tr>
       </table>
-
-      
-      <!--h1><a href="{{ "/" | absolute_url }}">TEST {{ site.title }}</a></h1-->
-      {% endif %}
-  
+    </div>
+    
     <div class="container-lg px-3 my-5 markdown-body">
       
-     
+      {% if site.title and site.title != page.title %}
+      <!--h1><a href="{{ "/" | absolute_url }}">TEST {{ site.title }}</a></h1-->
+      {% endif %}
 
       {{ content }}
 
