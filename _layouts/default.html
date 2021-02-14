@@ -35,18 +35,14 @@
         </tr>
       </table>
       
- <details class="dropdown details-reset details-overlay d-inline-block">
-  <summary class="btn" aria-haspopup="true">
-    Dropdown
-    <div class="dropdown-caret"></div>
-  </summary>
-
-  <ul class="dropdown-menu dropdown-menu-se">
-    <li><a class="dropdown-item" href="#url">Dropdown item</a></li>
-    <li><a class="dropdown-item" href="#url">Dropdown item</a></li>
-    <li><a class="dropdown-item" href="#url">Dropdown item</a></li>
-  </ul>
-</details>
+ <nav class="UnderlineNav UnderlineNav--right">
+  <div class="UnderlineNav-body">
+    <a href="#url" role="tab" title="Item 1" class="UnderlineNav-item selected">Item 1</a>
+    <a href="#url" role="tab" title="Item 2" class="UnderlineNav-item">Item 2</a>
+    <a href="#url" role="tab" title="Item 3" class="UnderlineNav-item">Item 3</a>
+    <a href="#url" role="tab" title="Item 4" class="UnderlineNav-item">Item 4</a>
+  </div>
+</nav>
       
       <!--h1><a href="{{ "/" | absolute_url }}">TEST {{ site.title }}</a></h1-->
       {% endif %}
