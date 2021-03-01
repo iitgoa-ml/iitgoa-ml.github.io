@@ -2,7 +2,6 @@
 
 
 
-### Past projects 
 
 **Summer 2019** 
 
