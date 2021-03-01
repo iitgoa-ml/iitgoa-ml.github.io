@@ -4,6 +4,7 @@
 
 
 **Summer 2019** 
+---------------
 
 #### Predicting the sea urchin fertilization with varying pH 
 
@@ -12,8 +13,9 @@
 Sea urchins are small, spiny marine organisms. They are important to their ecosystem as they help to maintain the number of algae in the ocean. They are also called the grazers of the ocean. Algae are important because they produce oxygen. The fertilization of sea urchin species Strongylocentrotus purpuratus varies with varying pH. Read [more](https://medium.com/@iitgoa.ml/predicting-the-sea-urchin-fertilization-with-varying-ph-87013cf393f4). 
 
 
----- 
+
 **Summer 2018** 
+---------------
 
 #### Climate Change 
 
