@@ -3,8 +3,8 @@
 
 
 
-**Summer 2019** 
----------------
+Summer 2019
+-----------
 
 #### Predicting the sea urchin fertilization with varying pH 
 
@@ -14,8 +14,8 @@ Sea urchins are small, spiny marine organisms. They are important to their ecosy
 
 
 
-**Summer 2018** 
----------------
+Summer 2018
+-----------
 
 #### Climate Change 
 
